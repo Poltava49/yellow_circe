@@ -10,7 +10,7 @@ class Circle(QMainWindow):
         uic.loadUi('circle.ui', self)
         self.do_paint = False
         self.pushButton.clicked.connect(self.paint)
-
+        print('Changes')
 
     def paintEvent(self, event):
         if self.do_paint:
