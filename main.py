@@ -7,7 +7,7 @@ from random import randint
 class Circle(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('circle.ui', self)
+        uic.loadUi('circle.py', self)
         self.do_paint = False
         self.pushButton.clicked.connect(self.paint)
         print('Changes')
